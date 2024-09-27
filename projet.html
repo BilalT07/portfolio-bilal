@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projet</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="w3-bar w3-border" style="background-color: #490fb1;">
+        <a href="acceuil.html" class="w3-bar-item w3-button">Acceuil</a>
+        <a href="projet.html" class="w3-bar-item w3-button">Projet</a>
+        <a href="competences.html" class="w3-bar-item w3-button">Compétences</a>
+        <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+
+<h1> Bonjour, dans cette page ce trouve quelque projet que j'ai réaliser seul ou en groupe</h1>
+<br>
+<h3>Projet 1:</h3>
+<h3>Quand j'étais en classe de 3eme (2021/2022), nous avons eu un TP, il fallait programmer un robot  maqueen pour le faire danser et chanter.
+    Je n'ai pas de vidéo pour montrer le robot, mais j'avais choisie une musique bien connue par les fans d'Animé.
+    <br> Clique sur "ICI" pour écouter</h3>
+<br><button id="lancerpause">ICI</button>
+<h3>Projet 2:</h3>
+<h3>Pendant ma phase approfondissement du BAFA (BAFA 3), moi et deux autres animateur
+     avons crée un jeu de rôle grandeur nature de A à Z,
+     avec les règles et le matériel nécessaire</h3>
+     <br>
+
+<h3>Projet 3:</h3>
+<h3></h3>
+
+
+    
+<div class="w3-bar w3-bottom">
+    <a href="acceuil.html" class="w3-button">Acceuil </a>
+    <a href="projet.html" class="w3-button"> Projet </a>    
+    <a href="competences.html" class="w3-button"> Compétences </a>
+    <a href="contact.html" class="w3-button"> Contact </a>                
+</div>
+
+    <audio id="audio" src="blue.mp3"></audio>
+    <script>
+        document.getElementById('lancerpause').addEventListener("click", () => {
+            let audio = document.getElementById("audio")
+            if(audio.paused) {
+                audio.play()
+            } else {
+                audio.pause()
+            }
+        })
+    </script>
+</body>
+</html>
